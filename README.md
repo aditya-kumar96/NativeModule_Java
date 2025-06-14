@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-# My NativeLogin App (Local Content)
-This is my local README content.
-=======
-# NativeModule_Java (Remote Content)
-A sample repository created on GitHub.
->>>>>>> 3160a0b... Initial commit
+# NativeModule_Java
+Login and Sign Up form with the validation to understand how the native module can be implement inside react native project.
