@@ -81,8 +81,3 @@ When you want to forcefully reload, for example to reset the state of your app, 
 
 You've successfully run and modified your React Native App. :partying_face:
 
-
-
-
->>>>>>> 3160a0b (Initial commit)
->>>>>>> 57b08a2 (Initial commit)
