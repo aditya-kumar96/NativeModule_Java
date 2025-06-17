@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NativeLogin</string>
+    <string name="login">enter login</string>
+    <string name="password">enter password</string>
+    <string name="loginbutton">Submit</string>
+
 </resources>

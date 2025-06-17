@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/login"
+        android:textStyle="bold"
+        tools:ignore="InefficientWeight"
+        android:layout_height="wrap_content"/>
+    <EditText
+    android:id="@+id/edit_text_id"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:autofillHints=""
+    android:hint="@string/login"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+    android:inputType="text"
+    />
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/login"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_submit"
+        android:text="@string/loginbutton"
+        android:textStyle="normal"
+        android:layout_gravity="center"
+        android:background="#09D"
+        android:textColor="#000"
+        />
+
+</LinearLayout>

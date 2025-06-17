@@ -1,15 +1,25 @@
 
 import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { TouchableOpacity ,StatusBar, StyleSheet, Text, useColorScheme, View, NativeModules } from 'react-native';
+
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
-
+  const {LoginModule} = NativeModules
   return (
     <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
-      <Text>Here are the update</Text>
+      <TouchableOpacity style={{
+        justifyContent:'center',
+        alignItems:'center',
+        width:150,
+        height:100
+      }}
+      onPress={()=>{
+        LoginModule.showLoginScreen()
+      }}
+      >
+       <Text>Login Landing Page</Text> 
+      </TouchableOpacity>
     </View>
   );
 }
