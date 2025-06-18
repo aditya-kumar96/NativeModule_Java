@@ -15,7 +15,7 @@ function App() {
         height:100
       }}
       onPress={()=>{
-        LoginModule.showLoginScreen()
+        LoginModule.ShowLogin()
       }}
       >
        <Text>Login Landing Page</Text> 
