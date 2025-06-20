@@ -11,6 +11,7 @@ import UIKit
 import React
 @objc(LoginModule)
 class LoginModule : NSObject{
+    //added the ShowLogin method 
    @objc func ShowLogin(){
         DispatchQueue.main.async{
             if let rootView = UIApplication.shared.keyWindow?.rootViewController {
