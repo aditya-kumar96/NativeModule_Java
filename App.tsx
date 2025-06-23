@@ -16,7 +16,7 @@ function App() {
 
   const showNativeLogin = () => {
     LoginModule.ShowLogin() // you can also pass initial values here if needed
-      .then((result: string) => {
+    ?.then((result: string) => {
         console.log('Received from Native:', result);
         Alert.alert('Login Result', result);
       })

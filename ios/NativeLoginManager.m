@@ -6,3 +6,6 @@
 //
 
 #import <React/RCTBridgeModule.h>
+@interface RCT_EXTERN_MODULE(LoginModule,NSObject)
+RCT_EXTERN_METHOD(ShowLogin)
+@end
