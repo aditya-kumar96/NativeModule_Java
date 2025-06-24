@@ -1,28 +1,39 @@
-//
-//  LoginModule.swift
-//  NativeLogin
-//
-//  Created by aadi Katiyaan on 19/06/25.
-//
-
 import Foundation
-
-import UIKit
 import React
+
 @objc(LoginModule)
-class LoginModule : NSObject{
-    //added the ShowLogin method 
-   @objc func ShowLogin(){
-        DispatchQueue.main.async{
-            if let rootView = UIApplication.shared.keyWindow?.rootViewController {
-                let viewController = LoginViewController()
-                rootView.present(viewController,animated:true,completion:nil)
-            }
-        }
-   }
+class LoginModule: NSObject {
+  @objc func showLogin() {
+    print("✅ ShowLogin called")
+  }
 
-    @objc static func requiresMainQueueSetup()->Bool{
-     return true 
-   }
-
+  @objc func logincallback(
+    _ username: String,
+    resolver: @escaping RCTPromiseResolveBlock,
+    rejecter: @escaping RCTPromiseRejectBlock
+  ) {
+    print("Login for \(username)")
+    resolver("Welcome, \(username)")
+  }
 }
+
+@objc(LoginModuleSpec)
+protocol LoginModuleSpec: RCTBridgeModule {
+  func showLogin()
+  func logincallback(_ username: String, resolver: @escaping RCTPromiseResolveBlock, rejecter: @escaping RCTPromiseRejectBlock)
+}
+
+extension LoginModule: LoginModuleSpec {}
+
+extension LoginModule: RCTBridgeModule {
+  static func moduleName() -> String! {
+    return "LoginModule"
+  }
+
+  static func requiresMainQueueSetup() -> Bool {
+    return false
+  }
+}
+
+// ✅ This line will now work if bridging header is correct
+extension LoginModule: RCTTurboModule {}

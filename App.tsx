@@ -9,21 +9,14 @@ import {
   View,
 } from 'react-native';
 
-const { LoginModule } = NativeModules;
+import LoginModule from './NativeModules/NativeLogin';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   const showNativeLogin = () => {
-    LoginModule.ShowLogin() // you can also pass initial values here if needed
-    ?.then((result: string) => {
-        console.log('Received from Native:', result);
-        Alert.alert('Login Result', result);
-      })
-      .catch((err: any) => {
-        console.error('Native error:', err);
-        Alert.alert('Error', err?.message || 'Something went wrong');
-      });
+    LoginModule.showLogin() // you can also pass initial values here if needed
+    
   };
 
   return (

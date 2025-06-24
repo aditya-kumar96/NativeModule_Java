@@ -9,6 +9,11 @@
     "start": "react-native start",
     "test": "jest"
   },
+  "codegenConfig": {
+  "name": "NativeLogin",
+  "type": "modules",
+  "jsSrcsDir": "./NativeModules"
+},
   "dependencies": {
     "react": "19.1.0",
     "react-native": "0.80.0",

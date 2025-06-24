@@ -13,7 +13,6 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B2A3B2822E03D46600D7CDD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A3B2812E03D46600D7CDD5 /* LoginViewController.swift */; };
 		B2A3B2842E03D58C00D7CDD5 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A3B2832E03D58800D7CDD5 /* LoginModule.swift */; };
-		B2A3B2882E03DBC000D7CDD5 /* NativeLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A3B2872E03DBC000D7CDD5 /* NativeLoginManager.m */; };
 		D10B3F9F29DAA8336DF6785A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		B2A3B2772E03D13900D7CDD5 /* NativeLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeLogin-Bridging-Header.h"; sourceTree = "<group>"; };
 		B2A3B2812E03D46600D7CDD5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B2A3B2832E03D58800D7CDD5 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
-		B2A3B2872E03DBC000D7CDD5 /* NativeLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeLoginManager.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				B2A3B2872E03DBC000D7CDD5 /* NativeLoginManager.m */,
 				B2A3B2832E03D58800D7CDD5 /* LoginModule.swift */,
 				B2A3B2812E03D46600D7CDD5 /* LoginViewController.swift */,
 				13B07FAE1A68108700A75B9A /* NativeLogin */,
@@ -259,7 +256,6 @@
 			files = (
 				B2A3B2822E03D46600D7CDD5 /* LoginViewController.swift in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
-				B2A3B2882E03DBC000D7CDD5 /* NativeLoginManager.m in Sources */,
 				B2A3B2842E03D58C00D7CDD5 /* LoginModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
