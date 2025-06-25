@@ -30,6 +30,7 @@ extension LoginModule: RCTBridgeModule {
     return "LoginModule"
   }
 //geetinng error in Native Module
+//will solve it in the morning
   static func requiresMainQueueSetup() -> Bool {
     return false
   }
