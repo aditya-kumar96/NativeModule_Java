@@ -29,7 +29,7 @@ extension LoginModule: RCTBridgeModule {
   static func moduleName() -> String! {
     return "LoginModule"
   }
-
+//geetinng error in Native Module
   static func requiresMainQueueSetup() -> Bool {
     return false
   }
