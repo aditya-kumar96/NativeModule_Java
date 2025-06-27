@@ -24,17 +24,14 @@ protocol LoginModuleSpec: RCTBridgeModule {
 }
 
 extension LoginModule: LoginModuleSpec {}
+extension LoginModule: RCTTurboModule {}
 
 extension LoginModule: RCTBridgeModule {
   static func moduleName() -> String! {
     return "LoginModule"
   }
-//geetinng error in Native Module
-//will solve it in the morning
+
   static func requiresMainQueueSetup() -> Bool {
     return false
   }
 }
-
-// ✅ This line will now work if bridging header is correct
-extension LoginModule: RCTTurboModule {}

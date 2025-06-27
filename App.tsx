@@ -9,13 +9,13 @@ import {
   View,
 } from 'react-native';
 
-import LoginModule from './NativeModules/NativeLogin';
+import LoginModule from './NativeModules/LoginModule.spec';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   const showNativeLogin = () => {
-    LoginModule.showLogin() // you can also pass initial values here if needed
+    LoginModule.showLogin(); // you can also pass initial values here if needed
     
   };
 
